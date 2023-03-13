@@ -106,7 +106,7 @@ describe("The payroll system", function () {
         let newEvent = updatedBpRecord.timeInEvents[0]
         expect(newEvent.date).to.eq("2014-02-28");
       })
-
+ 
       it("extracts the correct hour", function () {
         let bpRecord = createEmployeeRecord(["Byron", "Poodle", "Mascot", 3])
         let updatedBpRecord = createTimeInEvent(bpRecord, "2014-02-28 1400")
